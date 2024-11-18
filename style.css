@@ -1,0 +1,173 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+
+/* Global Styles for Body */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    width: 700px;
+    margin: 40px auto;
+}
+
+/* Card Design */
+.card-white {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Styles */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Profile Image Styling */
+#profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Link Styling */
+#contact-button {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-button:hover {
+    background-color: #005bb5;
+}
+
+/* Social Links Styling */
+.list-inline {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.list-inline > li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.list-inline > li a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.list-inline > li a:hover {
+    color: #005bb5;
+}
+
+/* FontAwesome Icons Styling */
+.list-inline i {
+    margin-right: 8px;
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 960px) {
+    .container {
+        width: 700px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 500px;
+    }
+    #profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+    #contact-button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: 300px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .list-inline > li {
+        display: block;
+        padding: 10px 0;
+    }
+    #contact-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
